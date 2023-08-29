@@ -374,7 +374,7 @@ if ( isset( $_GET['updated'] ) ) {
 			<tr>
 				<th scope="row"><label for="first_comment_email"><?php _e( 'First Comment Email' ); ?></label></th>
 				<td>
-					<input type="text" size="40" name="first_comment_email" id="first_comment_email" aria-describedby="first-comment-email-desc" value="<?php echo esc_attr( get_site_option( 'first_comment_email' ) ); ?>" />
+					<input type="email" size="40" name="first_comment_email" id="first_comment_email" aria-describedby="first-comment-email-desc" value="<?php echo esc_attr( get_site_option( 'first_comment_email' ) ); ?>" />
 					<p class="description" id="first-comment-email-desc">
 						<?php _e( 'The email address of the first comment author on a new site.' ); ?>
 					</p>
@@ -383,7 +383,7 @@ if ( isset( $_GET['updated'] ) ) {
 			<tr>
 				<th scope="row"><label for="first_comment_url"><?php _e( 'First Comment URL' ); ?></label></th>
 				<td>
-					<input type="text" size="40" name="first_comment_url" id="first_comment_url" aria-describedby="first-comment-url-desc" value="<?php echo esc_attr( get_site_option( 'first_comment_url' ) ); ?>" />
+					<input type="url" size="40" name="first_comment_url" id="first_comment_url" aria-describedby="first-comment-url-desc" value="<?php echo esc_attr( get_site_option( 'first_comment_url' ) ); ?>" />
 					<p class="description" id="first-comment-url-desc">
 						<?php _e( 'The URL for the first comment on a new site.' ); ?>
 					</p>
