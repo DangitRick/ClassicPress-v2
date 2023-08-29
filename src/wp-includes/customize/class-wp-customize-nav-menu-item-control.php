@@ -92,7 +92,7 @@ class WP_Customize_Nav_Menu_Item_Control extends WP_Customize_Control {
 			<p class="field-url description description-thin">
 				<label for="edit-menu-item-url-{{ data.menu_item_id }}">
 					<?php _e( 'URL' ); ?><br />
-					<input class="widefat code edit-menu-item-url" type="text" id="edit-menu-item-url-{{ data.menu_item_id }}" name="menu-item-url" />
+					<input class="widefat code edit-menu-item-url" type="url" id="edit-menu-item-url-{{ data.menu_item_id }}" name="menu-item-url" />
 				</label>
 			</p>
 		<# } #>
