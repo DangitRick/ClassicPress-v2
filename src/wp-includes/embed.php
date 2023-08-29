@@ -1170,7 +1170,7 @@ function print_embed_sharing_dialog() {
 					</li>
 				</ul>
 				<div id="<?php echo $share_tab_wordpress_id; ?>" class="wp-embed-share-tab" role="tabpanel" aria-hidden="false">
-					<input type="text" value="<?php the_permalink(); ?>" class="wp-embed-share-input" aria-label="<?php esc_attr_e( 'URL' ); ?>" aria-describedby="<?php echo $description_wordpress_id; ?>" tabindex="0" readonly/>
+					<input type="url" value="<?php the_permalink(); ?>" class="wp-embed-share-input" aria-label="<?php esc_attr_e( 'URL' ); ?>" aria-describedby="<?php echo $description_wordpress_id; ?>" tabindex="0" readonly/>
 
 					<p class="wp-embed-share-description" id="<?php echo $description_wordpress_id; ?>">
 						<?php _e( 'Copy and paste this URL into your WordPress site to embed' ); ?>
