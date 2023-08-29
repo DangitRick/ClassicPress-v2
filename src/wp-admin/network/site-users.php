@@ -340,7 +340,7 @@ if ( current_user_can( 'create_users' ) && apply_filters( 'show_network_site_use
 		</tr>
 		<tr>
 			<th scope="row"><label for="user_email"><?php _e( 'Email' ); ?></label></th>
-			<td><input type="text" class="regular-text" name="user[email]" id="user_email" /></td>
+			<td><input type="email" class="regular-text" name="user[email]" id="user_email" /></td>
 		</tr>
 		<tr>
 			<th scope="row"><label for="new_role_newuser"><?php _e( 'Role' ); ?></label></th>
