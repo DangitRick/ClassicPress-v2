@@ -1034,11 +1034,12 @@ class WP_List_Table {
 			'</span><span id="table-paging" class="paging-input"><span class="tablenav-paging-text">';
 		} else {
 			$html_current_page = sprintf(
-				"%s<input class='current-page' id='current-page-selector' type='text' name='paged' value='%s' size='%d' aria-describedby='table-paging' /><span class='tablenav-paging-text'>",
+				"%s<input class='current-page' id='current-page-selector' type='number' min='1' max='%d' name='paged' value='%s' size='%d' aria-describedby='table-paging' /><span class='tablenav-paging-text'>",
 				'<label for="current-page-selector" class="screen-reader-text">' .
 					/* translators: Hidden accessibility text. */
 					__( 'Current Page' ) .
 				'</label>',
+				$total_pages,
 				$current,
 				strlen( $total_pages )
 			);
