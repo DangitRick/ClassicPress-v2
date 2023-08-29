@@ -340,7 +340,7 @@ class WP_Widget_Media_Image extends WP_Widget_Media {
 			<# if ( data.url ) { #>
 			<p class="media-widget-image-link">
 				<label for="{{ elementIdPrefix }}linkUrl"><?php esc_html_e( 'Link to:' ); ?></label>
-				<input id="{{ elementIdPrefix }}linkUrl" type="text" class="widefat link" value="{{ data.link_url }}" placeholder="https://" pattern="((\w+:)?\/\/\w.*|\w+:(?!\/\/$)|\/|\?|#).*">
+				<input id="{{ elementIdPrefix }}linkUrl" type="url" class="widefat link" value="{{ data.link_url }}" placeholder="https://" pattern="((\w+:)?\/\/\w.*|\w+:(?!\/\/$)|\/|\?|#).*">
 			</p>
 			<# } #>
 		</script>
