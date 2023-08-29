@@ -535,7 +535,7 @@ function wp_print_media_templates() {
 				</span>
 				<span class="setting" data-setting="url">
 					<label for="attachment-details-two-column-copy-link" class="name"><?php _e( 'File URL:' ); ?></label>
-					<input type="text" class="attachment-details-copy-link" id="attachment-details-two-column-copy-link" value="{{ data.url }}" readonly />
+					<input type="url" class="attachment-details-copy-link" id="attachment-details-two-column-copy-link" value="{{ data.url }}" readonly />
 					<span class="copy-to-clipboard-container">
 						<button type="button" class="button button-small copy-attachment-url media-library" data-clipboard-target="#attachment-details-two-column-copy-link"><?php _e( 'Copy URL to clipboard' ); ?></button>
 						<span class="success hidden" aria-hidden="true"><?php _e( 'Copied!' ); ?></span>
@@ -780,7 +780,7 @@ function wp_print_media_templates() {
 		</span>
 		<span class="setting" data-setting="url">
 			<label for="attachment-details-copy-link" class="name"><?php _e( 'File URL:' ); ?></label>
-			<input type="text" class="attachment-details-copy-link" id="attachment-details-copy-link" value="{{ data.url }}" readonly />
+			<input type="url" class="attachment-details-copy-link" id="attachment-details-copy-link" value="{{ data.url }}" readonly />
 			<div class="copy-to-clipboard-container">
 				<button type="button" class="button button-small copy-attachment-url media-library" data-clipboard-target="#attachment-details-copy-link"><?php _e( 'Copy URL to clipboard' ); ?></button>
 				<span class="success hidden" aria-hidden="true"><?php _e( 'Copied!' ); ?></span>
@@ -878,7 +878,7 @@ function wp_print_media_templates() {
 		</span>
 		<span class="setting">
 			<label for="attachment-display-settings-link-to-custom" class="name"><?php _e( 'URL' ); ?></label>
-			<input type="text" id="attachment-display-settings-link-to-custom" class="link-to-custom" data-setting="linkUrl" />
+			<input type="url" id="attachment-display-settings-link-to-custom" class="link-to-custom" data-setting="linkUrl" />
 		</span>
 
 		<# if ( 'undefined' !== typeof data.sizes ) { #>
@@ -1104,7 +1104,7 @@ function wp_print_media_templates() {
 			</span>
 			<span class="setting">
 				<label for="embed-image-settings-link-to-custom" class="name"><?php _e( 'URL' ); ?></label>
-				<input type="text" id="embed-image-settings-link-to-custom" class="link-to-custom" data-setting="linkUrl" />
+				<input type="url" id="embed-image-settings-link-to-custom" class="link-to-custom" data-setting="linkUrl" />
 			</span>
 		</fieldset>
 	</script>
@@ -1227,7 +1227,7 @@ function wp_print_media_templates() {
 					</span>
 					<span class="setting">
 						<label for="image-details-link-to-custom" class="name"><?php _e( 'URL' ); ?></label>
-						<input type="text" id="image-details-link-to-custom" class="link-to-custom" data-setting="linkUrl" />
+						<input type="url" id="image-details-link-to-custom" class="link-to-custom" data-setting="linkUrl" />
 					</span>
 
 					<div class="advanced-section">
@@ -1301,7 +1301,7 @@ function wp_print_media_templates() {
 				#>
 				<span class="setting">
 					<label for="audio-details-source" class="name"><?php _e( 'URL' ); ?></label>
-					<input type="text" id="audio-details-source" readonly data-setting="src" value="{{ data.model.src }}" />
+					<input type="url" id="audio-details-source" readonly data-setting="src" value="{{ data.model.src }}" />
 					<button type="button" class="button-link remove-setting"><?php _e( 'Remove audio source' ); ?></button>
 				</span>
 				<# } #>
@@ -1392,7 +1392,7 @@ function wp_print_media_templates() {
 				#>
 				<span class="setting">
 					<label for="video-details-source" class="name"><?php _e( 'URL' ); ?></label>
-					<input type="text" id="video-details-source" readonly data-setting="src" value="{{ data.model.src }}" />
+					<input type="url" id="video-details-source" readonly data-setting="src" value="{{ data.model.src }}" />
 					<button type="button" class="button-link remove-setting"><?php _e( 'Remove video source' ); ?></button>
 				</span>
 				<# } #>
