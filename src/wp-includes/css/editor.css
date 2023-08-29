@@ -1492,7 +1492,8 @@ i.mce-i-wp_code:before {
 	color: inherit;
 }
 
-#wp-link label input[type="text"] {
+#wp-link label input[type="text"],
+#wp-link label input[type="url"] {
 	margin-top: 5px;
 	width: 70%;
 }

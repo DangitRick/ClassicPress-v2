@@ -1881,7 +1881,7 @@ final class _WP_Editors {
 				<p class="howto" id="wplink-enter-url"><?php _e( 'Enter the destination URL' ); ?></p>
 				<div>
 					<label><span><?php _e( 'URL' ); ?></span>
-					<input id="wp-link-url" type="text" aria-describedby="wplink-enter-url" /></label>
+					<input id="wp-link-url" type="url" aria-describedby="wplink-enter-url" /></label>
 				</div>
 				<div class="wp-link-text-field">
 					<label><span><?php _e( 'Link Text' ); ?></span>
