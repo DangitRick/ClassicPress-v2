@@ -1178,9 +1178,9 @@ span.imgedit-scale-warn {
 	display: inline-block;
 }
 
-.imgedit-settings .imgedit-scale input[type="text"],
-.imgedit-settings .imgedit-crop-ratio input[type="text"],
-.imgedit-settings .imgedit-crop-sel input[type="text"] {
+.imgedit-settings .imgedit-scale input[type="number"],
+.imgedit-settings .imgedit-crop-ratio input[type="number"],
+.imgedit-settings .imgedit-crop-sel input[type="number"] {
 	width: 80px;
 	font-size: 14px;
 	padding: 0 8px;
