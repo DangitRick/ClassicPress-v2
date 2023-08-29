@@ -161,7 +161,7 @@ if ( apply_filters( 'enable_post_by_email_configuration', true ) ) {
 <th scope="row"><label for="mailserver_url"><?php _e( 'Mail Server' ); ?></label></th>
 <td><input name="mailserver_url" type="text" id="mailserver_url" value="<?php form_option( 'mailserver_url' ); ?>" class="regular-text code" />
 <label for="mailserver_port"><?php _e( 'Port' ); ?></label>
-<input name="mailserver_port" type="text" id="mailserver_port" value="<?php form_option( 'mailserver_port' ); ?>" class="small-text" />
+<input name="mailserver_port" type="number" min="1" max="99999" id="mailserver_port" value="<?php form_option( 'mailserver_port' ); ?>" class="small-text" />
 </td>
 </tr>
 <tr>
