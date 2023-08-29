@@ -852,14 +852,14 @@ final class WP_Customize_Widgets {
 					_e( 'Search Widgets' );
 					?>
 				</label>
-				<input type="text" id="widgets-search" placeholder="<?php esc_attr_e( 'Search widgets&hellip;' ); ?>" aria-describedby="widgets-search-desc" />
+				<input type="search" id="widgets-search" placeholder="<?php esc_attr_e( 'Search widgets&hellip;' ); ?>" aria-describedby="widgets-search-desc" />
 				<div class="search-icon" aria-hidden="true"></div>
-				<button type="button" class="clear-results"><span class="screen-reader-text">
+				<!--button type="button" class="clear-results"><span class="screen-reader-text">
 					<?php
 					/* translators: Hidden accessibility text. */
 					_e( 'Clear Results' );
 					?>
-				</span></button>
+				</span></button-->
 				<p class="screen-reader-text" id="widgets-search-desc">
 					<?php
 					/* translators: Hidden accessibility text. */
