@@ -2623,12 +2623,7 @@ body.adding-widget .add-new-widget:before,
 	width: 100%;
 	min-height: 32px;
 	margin: 1px 0;
-	padding: 0 30px;
-}
-
-#available-widgets-filter input::-ms-clear,
-#available-menu-items-search input::-ms-clear {
-	display: none; /* remove the "x" in IE, which conflicts with the "x" icon on button.clear-results */
+	padding-left: 30px;
 }
 
 #available-menu-items-search .search-icon,
@@ -2642,56 +2637,6 @@ body.adding-widget .add-new-widget:before,
 	line-height: 2.1;
 	text-align: center;
 	color: #646970;
-}
-
-#available-widgets-filter .clear-results,
-#available-menu-items-search .clear-results {
-	position: absolute;
-	top: 15px; /* 13 container padding +1 input margin +1 input border */
-	right: 16px;
-	width: 30px;
-	height: 30px;
-	padding: 0;
-	border: 0;
-	cursor: pointer;
-	background: none;
-	color: #d63638;
-	text-decoration: none;
-	outline: 0;
-}
-
-#available-widgets-filter .clear-results,
-#available-menu-items-search .clear-results,
-#available-menu-items-search.loading .clear-results.is-visible {
-	display: none;
-}
-
-#available-widgets-filter .clear-results.is-visible,
-#available-menu-items-search .clear-results.is-visible {
-	display: block;
-}
-
-#available-widgets-filter .clear-results:before,
-#available-menu-items-search .clear-results:before {
-	content: "\f335";
-	font: normal 20px/1 dashicons;
-	vertical-align: middle;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-#available-widgets-filter .clear-results:hover,
-#available-widgets-filter .clear-results:focus,
-#available-menu-items-search .clear-results:hover,
-#available-menu-items-search .clear-results:focus {
-	color: #d63638;
-}
-
-#available-widgets-filter .clear-results:focus,
-#available-menu-items-search .clear-results:focus {
-	box-shadow:
-		0 0 0 1px #4f94d4,
-		0 0 2px 1px rgba(79, 148, 212, 0.8);
 }
 
 #available-menu-items-search .search-icon:after,
@@ -2966,7 +2911,6 @@ body.adding-widget .add-new-widget:before,
 		top: 130px;
 	}
 
-	#available-menu-items-search .clear-results,
 	#available-menu-items-search .search-icon {
 		top: 85px; /* 70 section title height + 13 container padding +1 input margin +1 input border */
 	}
