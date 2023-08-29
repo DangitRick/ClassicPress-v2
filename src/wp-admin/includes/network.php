@@ -364,7 +364,7 @@ function network_step1( $errors = false ) {
 			<tr>
 				<th scope='row'><label for="email"><?php esc_html_e( 'Network Admin Email' ); ?></label></th>
 				<td>
-					<input name='email' id='email' type='text' size='45' value='<?php echo esc_attr( $admin_email ); ?>' />
+					<input name='email' id='email' type='email' size='45' value='<?php echo esc_attr( $admin_email ); ?>' />
 					<p class="description">
 						<?php _e( 'Your email address.' ); ?>
 					</p>
