@@ -1275,7 +1275,7 @@ function image_link_input_fields( $post, $url_type = '' ) {
 	}
 
 	return "
-	<input type='text' class='text urlfield' name='attachments[$post->ID][url]' value='" . esc_attr( $url ) . "' /><br />
+	<input type='url' class='text urlfield' name='attachments[$post->ID][url]' value='" . esc_attr( $url ) . "' /><br />
 	<button type='button' class='button urlnone' data-link-url=''>" . __( 'None' ) . "</button>
 	<button type='button' class='button urlfile' data-link-url='" . esc_url( $file ) . "'>" . __( 'File URL' ) . "</button>
 	<button type='button' class='button urlpost' data-link-url='" . esc_url( $link ) . "'>" . __( 'Attachment Post URL' ) . '</button>
@@ -1415,7 +1415,7 @@ function get_attachment_fields_to_edit( $post, $errors = null ) {
 		'image_url'    => array(
 			'label' => __( 'File URL' ),
 			'input' => 'html',
-			'html'  => "<input type='text' class='text urlfield' readonly='readonly' name='attachments[$post->ID][url]' value='" . esc_attr( $image_url ) . "' /><br />",
+			'html'  => "<input type='url' class='text urlfield' readonly='readonly' name='attachments[$post->ID][url]' value='" . esc_attr( $image_url ) . "' /><br />",
 			'value' => wp_get_attachment_url( $post->ID ),
 			'helps' => __( 'Location of the uploaded file.' ),
 		),
